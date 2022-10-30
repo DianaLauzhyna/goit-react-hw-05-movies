@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '1e47046f2fa6627c23534650c78833b4';
+const API_KEY = 'e00ad79be36bc2cc0d5e41c08b27e7cd';
 const BASE_URL = 'https://api.themoviedb.org/3';
 export const IMAGE_URL = 'https://image.tmdb.org/t/p/w200';
 const lang = 'en-US';

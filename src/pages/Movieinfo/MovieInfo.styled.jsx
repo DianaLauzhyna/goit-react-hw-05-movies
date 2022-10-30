@@ -4,6 +4,7 @@ export const Movie = styled.div`
   display: flex;
   padding: 10px;
   border-bottom: 1px solid grey;
+
 `;
 
 export const Img = styled.img`

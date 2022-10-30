@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 export const NavItem = styled(NavLink)`
   color: black;
   text-decoration: none;
-  font-size: 20px;
-
+  font-size: 30px;
+  font-weight: 600;
   &.active {
-    color: red;
+    color:#FFA500;
   }
 `;
 

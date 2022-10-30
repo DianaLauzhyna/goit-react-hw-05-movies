@@ -1,16 +1,17 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { lazy } from 'react';
-import { Layout } from './Layout';
-import MovieInfo from '../pages/MovieInfo';
+
+import { Layout } from './Layout/Layout';
+import MovieInfo from '../pages/Movieinfo/MovieInfo';
 import { Cast } from './Cast/Cast';
 import { Reviews } from './Reviews/Reviews';
 
-const Home = lazy(() => import('../pages/Home'));
-const Movies = lazy(() => import('../pages/Movies'));
+const Home = lazy(() => import('../pages/Home/Home'));
+const Movies = lazy(() => import('../pages/Movies/Movies'));
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -23,6 +24,6 @@ export const App = () => {
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </div>
+    </>
   );
 };

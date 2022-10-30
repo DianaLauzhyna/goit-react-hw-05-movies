@@ -3,10 +3,13 @@ import { useState, useEffect } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
+
 import { IMAGE_URL } from 'services/movieApi';
+import { getMovieInfo } from 'services/movieApi';
+
 import { Movie, Img, MovieaAditionalInfo } from './MovieInfo.styled';
 
-import { getMovieInfo } from 'services/movieApi';
+
 
 const MovieInfo = () => {
   const { movieId } = useParams();
